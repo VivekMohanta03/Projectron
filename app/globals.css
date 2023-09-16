@@ -59,3 +59,4 @@ body {
 .footer_column {
   @apply flex-1 flex flex-col gap-3 text-sm min-w-max;
 }
+
