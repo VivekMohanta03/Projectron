@@ -5,7 +5,9 @@ import logo from "../public/logo.png";
 import Button from "./Button";
 import { NavLinks } from "@/constant/Index";
 const navbar = async () => {
+  const session = {}
   return (
+    
     <nav className="flexBetween navbar border-nav-border">
       <div className="flex-1 flexStart gap-10">
         <Link href="/">
@@ -18,6 +20,14 @@ const navbar = async () => {
             </Link>
           ))}
         </ul>
+      </div>
+      <div className="flexCenter gap-4">
+        {session ?(
+          <>
+          userphoto
+          <Link href="/create-project">New Project</Link>
+          </>
+        )}
       </div>
     </nav>
   );
