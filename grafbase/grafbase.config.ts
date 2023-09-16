@@ -1,5 +1,4 @@
-import {g,auth,config} from '@grafbase/sdk'
-
+import { g, auth, config } from "@grafbase/sdk";
 
 //@ts-ignore
 const User = g
@@ -15,7 +14,9 @@ const User = g
       .list()
       .optional(),
   })
-  
+  .auth((rules) => {
+    rules.public().read();
+  });
 
   //@ts-ignore
 const Project = g
@@ -28,9 +29,20 @@ const Project = g
     category: g.string().search(),
     createdBy: g.relation(() => User),
   })
+  .auth((rules) => {
+    rules.public().read();
+    rules.private().create().delete().update();
+  });
 
+const jwt = auth.JWT({
+  issuer: "grafbase",
+  secret: g.env("NEXTAUTH_SECRET"),
+});
 
 export default config({
-  schema: g
-  
-})
+  schema: g,
+  auth: {
+    providers: [jwt],
+    rules: (rules) => rules.private(),
+  },
+});
