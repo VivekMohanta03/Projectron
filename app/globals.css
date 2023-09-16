@@ -43,3 +43,19 @@ body {
   background: #888;                        
   border-radius: 12px;
 }
+
+.navbar {
+  @apply py-5 px-20 border-b gap-4 ;
+}
+
+.footer {
+  @apply flex-col paddings w-full gap-20;
+}
+
+.footer_copyright {
+  @apply max-sm:flex-col w-full text-sm font-normal;
+}
+
+.footer_column {
+  @apply flex-1 flex flex-col gap-3 text-sm min-w-max;
+}

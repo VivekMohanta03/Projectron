@@ -6,7 +6,7 @@ import Button from "./Button";
 import { NavLinks } from "@/constant/Index";
 const navbar = async () => {
   return (
-    <nav className="flexBetween navbar">
+    <nav className="flexBetween navbar border-nav-border">
       <div className="flex-1 flexStart gap-10">
         <Link href="/">
           <Image src={logo} width={116} height={43} alt="logo" />

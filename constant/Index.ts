@@ -26,10 +26,7 @@ export const NavLinks = [
     {
       title: "For developers",
       links: [
-        "Go Pro!",
-        "Explore development work",
         "Development blog",
-        "Code podcast",
         "Open-source projects",
         "Refer a Friend",
         "Code of conduct",
@@ -50,7 +47,7 @@ export const NavLinks = [
     {
       title: "Company",
       links: [
-        "About",
+        "About Us",
         "Careers",
         "Support",
         "Media kit",
@@ -67,8 +64,6 @@ export const NavLinks = [
         "Development jobs",
         "Developers for hire",
         "Freelance developers for hire",
-        "Tags",
-        "Places",
       ],
     },
     {
@@ -77,7 +72,6 @@ export const NavLinks = [
         "Code Marketplace",
         "GitHub Marketplace",
         "NPM Registry",
-        "Packagephobia",
       ],
     },
     {
