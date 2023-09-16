@@ -4,10 +4,10 @@ import React from "react";
 import logo from "../public/logo.png";
 import Button from "./Button";
 import { NavLinks } from "@/constant/Index";
+import AuthProviders from "./AuthProviders";
 const navbar = async () => {
-  const session = {}
+  const session = {};
   return (
-    
     <nav className="flexBetween navbar border-nav-border">
       <div className="flex-1 flexStart gap-10">
         <Link href="/">
@@ -22,11 +22,13 @@ const navbar = async () => {
         </ul>
       </div>
       <div className="flexCenter gap-4">
-        {session ?(
+        {session ? (
           <>
-          userphoto
-          <Link href="/create-project">New Project</Link>
+            userphoto
+            <Link href="/create-project">New Project</Link>
           </>
+        ) : (
+          <AuthProviders />
         )}
       </div>
     </nav>
