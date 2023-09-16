@@ -40,6 +40,6 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;                       
+  background: #888;                        
   border-radius: 12px;
 }
