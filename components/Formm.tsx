@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Button from "./Button";
 const Formm = () => {
   const [comments, setcomments] = useState([
     "nice project !",
@@ -17,19 +18,19 @@ const Formm = () => {
   };
   return (
     <div>
-      <section className="flex-auto mx-12 my-3">
+      <section className="flex-auto  my-3 mr-auto bg-violet-100 border rounded-lg px-4 py-2 sm:px-60 sm:py-4 leading-relaxed">
         <h1 className="mb-4 text-2xl font-extrabold text-gray-900 dark:text-black md:text-2xl lg:text-2xl">
-          Comments
+          Reviews
         </h1>
 
         {comments.map((cmnt) => {
           return (
-            <div>
+            <div className="flex-1 border rounded-lg px-4 py-2 sm:px-6 sm:py-4 bg-violet-200 leading-relaxed">
               {" "}
               <h1 className="mb-4 text-xl font-extrabold text-gray-900 dark:text-black md:text-xl lg:text-xl">
                 User
               </h1>
-              <p className="text-lg font-normal text-gray-800 lg:text-xl dark:text-gray-400">
+              <p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
                 {" "}
                 {cmnt}
               </p>
@@ -45,12 +46,7 @@ const Formm = () => {
           value={newCommnets}
           onChange={(event) => setNewComments(event.target.value)}
         />
-        <button
-          type="submit"
-          className=" h-10 px-6 font-semibold rounded-md bg-violet-500 text-white"
-        >
-          Comment
-        </button>
+        <Button type="submit" title="Add a Review" />
       </form>
     </div>
   );

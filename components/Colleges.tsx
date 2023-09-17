@@ -12,8 +12,8 @@ type Props = {
 };
 
 const Colleges = ({ title, state, filters, setCol }: Props) => (
-  <div className="flexStart flex-col w-full gap-7 relative">
-    <label htmlFor={title} className="w-full text-gray-100">
+  <div className="flexCenter flex-col w-full gap-7 relative">
+    <label htmlFor={title} className="w-full text-violet-600 font-semibold bg-blend-overlay">
       {title}
     </label>
     <Menu as="div" className="self-start relative">
@@ -32,7 +32,7 @@ const Colleges = ({ title, state, filters, setCol }: Props) => (
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="flexStart custom_menu-items border-nav-border flex-col absolute left-0 mt-2 xs:min-w-[300px] w-fit max-h-60 origin-top-right rounded-xl bg-white border shadow-menu overflow-y-auto">
+        <Menu.Items className="flexStart custom_menu-items border-nav-border flex-col absolute left-0 mt-2 xs:min-w-[300px] w-fit max-h-60 origin-top-right rounded-xl bg-white border shadow-menu overflow-y-auto z-20">
           {filters.map((tag) => (
             <Menu.Item key={tag}>
               <button

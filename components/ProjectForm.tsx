@@ -5,7 +5,7 @@ import React, { ChangeEvent, FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import FormField from "./FormField";
 import CustomMenu from "./CustomMenu";
-import { College,categoryFilters } from "@/constant/Index"; 
+import { College, categoryFilters } from "@/constant/Index";
 import { FormState, ProjectInterface, SessionInterface } from "@/common.types";
 import Button from "./Button";
 import { createNewProject, fetchToken, updateProject } from "@/lib/actions";
@@ -19,7 +19,7 @@ type Props = {
 const ProjectForm = ({ type, session, project }: Props) => {
   const router = useRouter();
   const [submitting, setSubmitting] = useState<boolean>(false);
-  const [col,setCol]= useState("")
+  const [col, setCol] = useState("");
 
   const [form, setForm] = useState<FormState>({
     title: project?.title || "",
@@ -28,7 +28,6 @@ const ProjectForm = ({ type, session, project }: Props) => {
     liveSiteUrl: project?.liveSiteUrl || "",
     githubUrl: project?.githubUrl || "",
     category: project?.category || "",
-    
   });
 
   const handleStateChange = (fieldName: keyof FormState, value: string) => {
@@ -133,12 +132,13 @@ const ProjectForm = ({ type, session, project }: Props) => {
         setState={(value) => handleStateChange("githubUrl", value)}
       />
 
-<Colleges
+      <Colleges
         title="College/University"
         state={col}
         filters={College}
         setCol={setCol}
       />
+
       <CustomMenu
         title="Category"
         state={form.category}

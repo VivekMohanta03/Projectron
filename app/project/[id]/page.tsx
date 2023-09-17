@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Link from "next/link";
 import { getCurrentUser } from "@/lib/session";
@@ -8,10 +7,9 @@ import ProjectActions from "@/components/ProjectActions";
 import RelatedProjects from "@/components/RelatedProjects";
 import Formm from "@/components/Formm";
 import { ProjectInterface } from "@/common.types";
-
+import Button from "@/components/Button";
 
 const Project = async ({ params: { id } }: { params: { id: string } }) => {
- 
   const session = await getCurrentUser();
   const result = (await getProjectDetails(id)) as {
     project?: ProjectInterface;
@@ -23,7 +21,6 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
   const projectDetails = result?.project;
 
   const renderLink = () => `/profile/${projectDetails?.createdBy?.id}`;
- 
 
   return (
     <Model>
@@ -85,9 +82,9 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
             rel="noreferrer"
             className="flexCenter gap-2 tex-sm font-medium text-primary-purple"
           >
-            🖥 <span className="underline">Github</span>
+            <Button title="🖥 GitHub"/>
           </Link>
-          
+
           <Image src="/dot.svg" width={4} height={4} alt="dot" />
           <Link
             href={projectDetails?.liveSiteUrl}
@@ -95,12 +92,12 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
             rel="noreferrer"
             className="flexCenter gap-2 tex-sm font-medium text-primary-purple"
           >
-            🚀 <span className="underline">Live Site</span>
+            <Button title="🚀 Live Site" />
           </Link>
         </div>
       </section>
-       <Formm/>
-  
+      <Formm />
+
       <section className="flexCenter w-full gap-8 mt-28">
         <span className="w-full h-0.5 bg-light-white-200" />
         <Link href={renderLink()} className="min-w-[82px] h-[82px]">
