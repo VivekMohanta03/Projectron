@@ -38,7 +38,7 @@ const Categories = () => {
           data-dropdown-toggle="dropdownDelay"
           data-dropdown-delay="500"
           data-dropdown-trigger="hover"
-          className="font-normal bg-purple-50 font-medium xl px-4 py-3 rounded-lg capitalize whitespace-nowrap hover:bg-purple-300 hover:text-black mb-2"
+          className="font-normal bg-purple-50 xl px-4 py-3 rounded-lg capitalize whitespace-nowrap hover:bg-purple-300 hover:text-black mb-2"
           type="button"
         >
           More
