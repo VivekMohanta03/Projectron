@@ -5,9 +5,9 @@ import React from "react";
 import AuthProviders from "./AuthProviders";
 import logo from "../public/logo.png";
 import { getCurrentUser } from "@/lib/session";
+import { signOut } from "next-auth/react";
 import ProfileMenu from "./ProfileMenu";
 import Button from "./Button";
-
 
 const navbar = async () => {
   const session = await getCurrentUser();
@@ -25,39 +25,14 @@ const navbar = async () => {
           ))}
         </ul>
       </div>
-      {/* Search box */}
-      <form>
-        <div className="flex items-center border-2 border-gray-300 bg-white h-10 pl-2 pr-8 rounded-lg text-sm focus:outline-none">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 pt-0.5 text-gray-600"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            />
-          </svg>
-          <input
-            className="ml-2 outline-none bg-transparent font-"
-            type="text"
-            name="search"
-            id="search"
-            placeholder="Search..."
-          />
-        </div>
-      </form>
-      {/* End of search box*/}
+
       <div className="flexCenter gap-4">
         {session?.user ? (
           <>
             <ProfileMenu session={session} />
+
             <Link href="/create-project">
-              <Button title="+ New Project" />
+            <Button title='+ New Project' />
             </Link>
           </>
         ) : (
