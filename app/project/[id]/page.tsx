@@ -120,6 +120,7 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
         projectId={projectDetails?.id}
       />
     </Model>
+    
   );
 };
 
