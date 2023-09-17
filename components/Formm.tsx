@@ -17,19 +17,19 @@ const Formm = () => {
   };
   return (
     <div>
-      <section className="flex-auto mx-12 my-3">
+      <section className="flex-auto  my-3 mr-auto bg-violet-100 border rounded-lg px-4 py-2 sm:px-60 sm:py-4 leading-relaxed">
         <h1 className="mb-4 text-2xl font-extrabold text-gray-900 dark:text-black md:text-2xl lg:text-2xl">
           Comments
         </h1>
 
         {comments.map((cmnt) => {
           return (
-            <div>
+            <div className="flex-1 border rounded-lg px-4 py-2 sm:px-6 sm:py-4 bg-violet-200 leading-relaxed">
               {" "}
               <h1 className="mb-4 text-xl font-extrabold text-gray-900 dark:text-black md:text-xl lg:text-xl">
                 User
               </h1>
-              <p className="text-lg font-normal text-gray-800 lg:text-xl dark:text-gray-400">
+              <p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
                 {" "}
                 {cmnt}
               </p>
