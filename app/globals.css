@@ -130,3 +130,19 @@ body {
 .related_projects-grid {
   @apply grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 mt-5;
 }
+
+.edit-action_btn {
+  @apply p-3 text-gray-100 bg-violet-200 hover:bg-green-400 rounded-lg text-sm font-medium ;
+}
+
+.delete-action_btn {
+  @apply p-3 text-gray-100 bg-violet-200 hover:bg-red-600 rounded-lg text-sm font-medium;
+}
+
+.user-actions_section {
+  @apply fixed max-md:hidden flex gap-4 flex-col right-10 top-20;
+}
+
+.user-info {
+  @apply flex flex-wrap whitespace-nowrap text-sm font-normal gap-2 w-full;
+}

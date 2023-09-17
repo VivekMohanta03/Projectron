@@ -106,7 +106,7 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
             alt="profile image"
           />
         </Link>
-        <span className="w-full h-0.5 bg-light-white-200" />
+        <span className="w-full h-0.5 bg-white-200" />
       </section>
 
       <RelatedProjects
