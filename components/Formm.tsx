@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Button from "./Button";
 const Formm = () => {
   const [comments, setcomments] = useState([
     "nice project !",
@@ -45,12 +46,7 @@ const Formm = () => {
           value={newCommnets}
           onChange={(event) => setNewComments(event.target.value)}
         />
-        <button
-          type="submit"
-          className=" h-10 px-6 font-semibold rounded-md bg-violet-500 text-white"
-        >
-          Comment
-        </button>
+        <Button type="submit" title="Comment" />
       </form>
     </div>
   );
