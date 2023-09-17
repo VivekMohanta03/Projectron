@@ -1,14 +1,17 @@
+
 import Image from "next/image";
 import Link from "next/link";
-
 import { getCurrentUser } from "@/lib/session";
 import { getProjectDetails } from "@/lib/actions";
 import Model from "@/components/Model";
 import ProjectActions from "@/components/ProjectActions";
 import RelatedProjects from "@/components/RelatedProjects";
+import Formm from "@/components/Formm";
 import { ProjectInterface } from "@/common.types";
 
+
 const Project = async ({ params: { id } }: { params: { id: string } }) => {
+ 
   const session = await getCurrentUser();
   const result = (await getProjectDetails(id)) as {
     project?: ProjectInterface;
@@ -20,6 +23,7 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
   const projectDetails = result?.project;
 
   const renderLink = () => `/profile/${projectDetails?.createdBy?.id}`;
+ 
 
   return (
     <Model>
@@ -83,6 +87,7 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
           >
             🖥 <span className="underline">Github</span>
           </Link>
+          
           <Image src="/dot.svg" width={4} height={4} alt="dot" />
           <Link
             href={projectDetails?.liveSiteUrl}
@@ -94,7 +99,8 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
           </Link>
         </div>
       </section>
-
+       <Formm/>
+  
       <section className="flexCenter w-full gap-8 mt-28">
         <span className="w-full h-0.5 bg-light-white-200" />
         <Link href={renderLink()} className="min-w-[82px] h-[82px]">
@@ -106,7 +112,7 @@ const Project = async ({ params: { id } }: { params: { id: string } }) => {
             alt="profile image"
           />
         </Link>
-        <span className="w-full h-0.5 bg-white-200" />
+        <span className="w-full h-0.5 bg-light-white-200" />
       </section>
 
       <RelatedProjects
