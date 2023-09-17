@@ -24,8 +24,8 @@ const Categories = () => {
             type="button"
             onClick={() => handleTags(filter)}
             className={`${
-              category === filter ? "bg-violet-200 font-medium" : "font-normal"
-            } xl px-4 py-3 rounded-lg capitalize whitespace-nowrap hover:bg-violet-600 mb-2`}
+              category === filter ? "bg-purple-300 font-medium" : "font-normal"
+            } xl px-4 py-3 rounded-lg capitalize whitespace-nowrap hover:bg-violet-600 hover:text-white mb-2`}
           >
             {filter}
           </button>

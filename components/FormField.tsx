@@ -17,7 +17,7 @@ const FormField = ({
 }: Props) => {
   return (
     <div className="flexStart flex-col w-full gap-4">
-      <label className="w-full text-gray-100">{title}</label>
+      <label className="w-full text-violet-600 font-semibold">{title}</label>
 
       {isTextArea ? (
         <textarea
@@ -32,7 +32,7 @@ const FormField = ({
           placeholder={placeholder}
           required
           value={state}
-          className="form_field-input"
+          className="form_field-input bg-white"
           onChange={(e) => setState(e.target.value)}
         />
       )}

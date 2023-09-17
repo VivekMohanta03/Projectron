@@ -18,8 +18,8 @@ const CustomMenu = ({ title, state, filters, setState }: Props) => (
     </label>
     <Menu as="div" className="self-start relative">
       <div>
-        <Menu.Button className="flexCenter custom_menu-btn">
-          {state || "Category"}
+        <Menu.Button className="flexCenter custom_menu-btn bg-white">
+          {state || "Select a Category"}
           <Image src="/arrow-down.svg" width={10} height={5} alt="arrow down" />
         </Menu.Button>
       </div>
@@ -33,7 +33,7 @@ const CustomMenu = ({ title, state, filters, setState }: Props) => (
         leaveTo="transform opacity-0 scale-95"
       >
         <Menu.Items
-          className="flexStart custom_menu-items border-nav-border flex-col absolute left-0 mt-2 xs:min-w-[300px] w-fit max-h-64 origin-top-right rounded-xl bg-white border shadow-menu overflow-y-auto"
+          className="flexStart custom_menu-items border-nav-border flex-col absolute left-0 mt-2 xs:min-w-[300px] w-fit max-h-60 origin-top-right rounded-xl bg-white border shadow-menu overflow-y-auto"
         >
           {filters.map((tag) => (
             <Menu.Item key={tag}>

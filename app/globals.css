@@ -68,7 +68,7 @@ body {
 }
 
 .form_image-label {
-  @apply z-10 text-center w-full h-full p-20 text-sky-200 border-2 border-gray-50 border-dashed;
+  @apply z-10 text-center w-full h-full p-20 text-violet-600 border-2 font-semibold border-purple-200 border-dashed;
 }
 
 .form_image-input {
@@ -90,7 +90,7 @@ body {
 }
 
 .model_wrapper {
-  @apply flex justify-start items-center flex-col absolute h-[95%] w-full bottom-0 bg-violet-500 rounded-t-3xl lg:px-40 px-8 pt-14 pb-72 overflow-auto;
+  @apply flex justify-start items-center flex-col absolute h-[95%] w-full bottom-0 bg-violet-50 rounded-t-3xl lg:px-40 px-8 pt-14 pb-72 overflow-auto;
 }
 
 .model-head-text {
@@ -108,7 +108,7 @@ body {
 
 
 .custom_menu-item {
-  @apply text-left w-full px-5 py-2 text-sm hover:bg-violet-500 self-start whitespace-nowrap capitalize;
+  @apply text-left w-full px-5 py-2 text-sm hover:bg-violet-600 hover:text-white self-start whitespace-nowrap capitalize;
 }
 
 
