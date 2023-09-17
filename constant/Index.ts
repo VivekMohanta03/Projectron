@@ -22,111 +22,126 @@ export const categoryFilters = [
   "Chatbots",
 ];
 export const College = [
+  "Institute of Technical Education and Research(ITER)",
+  "Indian Institute of Technology (IIT), Bombay",
+  "Indian Institute of Technology (IIT), Delhi",
+  "Indian Institute of Technology (IIT), Madras",
+  "Indian Institute of Technology (IIT), Kanpur",
+  "Indian Institute of Technology (IIT), Kharagpur",
+  "National Institute of Technology (NIT), Trichy",
+  "Birla Institute of Technology and Science (BITS), Pilani",
+  "Delhi Technological University (DTU)",
+  "Visvesvaraya National Institute of Technology (VNIT), Nagpur",
+  "Indian Institute of Technology (IIT), Roorkee",
+  "National Institute of Technology (NIT), Warangal",
+  "Vellore Institute of Technology (VIT), Vellore",
+  "Indian Institute of Technology (IIT), Guwahati",
+  "National Institute of Technology (NIT), Surathkal",
+  "Manipal Institute of Technology (MIT), Manipal",
+  "Indian Institute of Technology (IIT), Hyderabad",
+  "Birla Institute of Technology (BIT), Mesra",
+  "National Institute of Technology (NIT), Calicut",
+  "Punjab Engineering College (PEC), Chandigarh",
+  "Indian Institute of Technology (IIT), Indore",
+  "Delhi University",
+  "Jawaharlal Nehru University (JNU)",
+  "Banaras Hindu University (BHU)",
+  "University of Mumbai",
+  "University of Calcutta",
+  "University of Madras",
+  "Indian Statistical Institute (ISI)",
+  "Tata Institute of Social Sciences (TISS)",
+  "Indian Institute of Management Bangalore (IIM Bangalore)",
+  "Indian Institute of Management Ahmedabad (IIM Ahmedabad)",
+  "Indian Institute of Management Calcutta (IIM Calcutta)",
+  "Indian Institute of Management Lucknow (IIM Lucknow)",
+  "Xavier School of Management (XLRI)",
+  "National Institute of Technology, Tiruchirappalli (NIT Trichy)",
+  "All India Institute of Medical Sciences (AIIMS)",
+  "St. Stephen's College, Delhi",
+  "Presidency College, Kolkata",
+  "Loyola College, Chennai",
+  "Lady Shri Ram College for Women, Delhi",
+  "Hindu College, Delhi",
+];
 
-    "Indian Institute of Technology (IIT), Bombay",
-    "Indian Institute of Technology (IIT), Delhi",
-    "Indian Institute of Technology (IIT), Madras",
-    "Indian Institute of Technology (IIT), Kanpur",
-    "Indian Institute of Technology (IIT), Kharagpur",
-    "National Institute of Technology (NIT), Trichy",
-    "Birla Institute of Technology and Science (BITS), Pilani",
-    "Delhi Technological University (DTU)",
-    "Visvesvaraya National Institute of Technology (VNIT), Nagpur",
-    "Indian Institute of Technology (IIT), Roorkee",
-    "National Institute of Technology (NIT), Warangal",
-    "Vellore Institute of Technology (VIT), Vellore",
-    "Indian Institute of Technology (IIT), Guwahati",
-    "National Institute of Technology (NIT), Surathkal",
-    "Manipal Institute of Technology (MIT), Manipal",
-    "Indian Institute of Technology (IIT), Hyderabad",
-    "Birla Institute of Technology (BIT), Mesra",
-    "National Institute of Technology (NIT), Calicut",
-    "Punjab Engineering College (PEC), Chandigarh",
-    "Indian Institute of Technology (IIT), Indore",
-  
-  ];
-  
-  // You can continue to add more colleges to the list as needed.
-  
-  export const categoryNavNormal = [
-    "Full-Stack",
-    "Mobile",
-    "DevOps",
-    "Machine Learning",
-    "Cybersecurity",
-    "Blockchain",
-  ]
-  export const categoryNavDrop = [
-    "Frontend",
-    "Backend",
-    "UI/UX",
-    "Game Dev",
-    "Data Science",
-    "E-commerce",
-    "Chatbots",
-  ]
+// You can continue to add more colleges to the list as needed.
 
-  export const footerLinks = [
-    {
-      title: "For developers",
-      links: [
-        "Development blog",
-        "Open-source projects",
-        "Refer a Friend",
-        "Code of conduct",
-      ],
-    },
-    {
-      title: "Hire developers",
-      links: [
-        "Post a job opening",
-        "Post a freelance project",
-        "Search for developers",
-      ],
-    },
-    {
-      title: "Brands",
-      links: ["Advertise with us"],
-    },
-    {
-      title: "Company",
-      links: [
-        "About Us",
-        "Careers",
-        "Support",
-        "Media kit",
-        "Testimonials",
-        "API",
-        "Terms of service",
-        "Privacy policy",
-        "Cookie policy",
-      ],
-    },
-    {
-      title: "Directories",
-      links: [
-        "Development jobs",
-        "Developers for hire",
-        "Freelance developers for hire",
-      ],
-    },
-    {
-      title: "Development assets",
-      links: [
-        "Code Marketplace",
-        "GitHub Marketplace",
-        "NPM Registry",
-      ],
-    },
-    {
-      title: "Development Resources",
-      links: [
-        "Freelancing",
-        "Development Hiring",
-        "Development Portfolio",
-        "Development Education",
-        "Creative Process",
-        "Development Industry Trends",
-      ],
-    },
-  ];
+export const categoryNavNormal = [
+  "Full-Stack",
+  "Mobile",
+  "DevOps",
+  "Machine Learning",
+  "Cybersecurity",
+  "Blockchain",
+];
+export const categoryNavDrop = [
+  "Frontend",
+  "Backend",
+  "UI/UX",
+  "Game Dev",
+  "Data Science",
+  "E-commerce",
+  "Chatbots",
+];
+
+export const footerLinks = [
+  {
+    title: "For developers",
+    links: [
+      "Development blog",
+      "Open-source projects",
+      "Refer a Friend",
+      "Code of conduct",
+    ],
+  },
+  {
+    title: "Hire developers",
+    links: [
+      "Post a job opening",
+      "Post a freelance project",
+      "Search for developers",
+    ],
+  },
+  {
+    title: "Brands",
+    links: ["Advertise with us"],
+  },
+  {
+    title: "Company",
+    links: [
+      "About Us",
+      "Careers",
+      "Support",
+      "Media kit",
+      "Testimonials",
+      "API",
+      "Terms of service",
+      "Privacy policy",
+      "Cookie policy",
+    ],
+  },
+  {
+    title: "Directories",
+    links: [
+      "Development jobs",
+      "Developers for hire",
+      "Freelance developers for hire",
+    ],
+  },
+  {
+    title: "Development assets",
+    links: ["Code Marketplace", "GitHub Marketplace", "NPM Registry"],
+  },
+  {
+    title: "Development Resources",
+    links: [
+      "Freelancing",
+      "Development Hiring",
+      "Development Portfolio",
+      "Development Education",
+      "Creative Process",
+      "Development Industry Trends",
+    ],
+  },
+];
