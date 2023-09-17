@@ -80,6 +80,6 @@ Start the server:
 - [@Vivek Kumar Mohanta](https://github.com/VivekMohanta03)
 - [@Arya Aditya Dash](https://github.com/aryaaditya3609)
 - [@Ayush Kumar Dash](https://github.com/ROCK1235)
-- [@T Adarsh Naidu](https://github.com/adarsh-ON-crack)
+- [@T Adarsh](https://github.com/adarsh-ON-crack)
 - [@Nikhil Rai](https://github.com/nikhilrai555)
 - [@Pranjal Bohidar](https://github.com/Pranjal-Bohidar)
