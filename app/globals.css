@@ -60,3 +60,55 @@ body {
   @apply flex-1 flex flex-col gap-3 text-sm min-w-max;
 }
 
+.form {
+  @apply flex-col w-full lg:pt-24 pt-12 gap-10 text-lg max-w-5xl mx-auto;
+}
+.form_image-container {
+  @apply w-full lg:min-h-[400px] min-h-[200px] relative;
+}
+
+.form_image-label {
+  @apply z-10 text-center w-full h-full p-20 text-sky-200 border-2 border-gray-50 border-dashed;
+}
+
+.form_image-input {
+  @apply absolute z-30 w-full opacity-0 h-full cursor-pointer;
+}
+
+/* Profile Projects */
+.profile_projects {
+  @apply grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 mt-5;
+}
+/* Form Field */
+.form_field-input {
+  @apply w-full outline-0  rounded-xl p-4;
+}
+
+/* model */
+.model {
+  @apply fixed z-10 left-0 right-0 top-0 bottom-0 mx-auto bg-black/80;
+}
+
+.model_wrapper {
+  @apply flex justify-start items-center flex-col absolute h-[95%] w-full bottom-0 bg-violet-500 rounded-t-3xl lg:px-40 px-8 pt-14 pb-72 overflow-auto;
+}
+
+.model-head-text {
+  @apply md:text-5xl text-3xl font-extrabold text-left max-w-5xl w-full;
+}
+
+.no-result-text {
+  @apply w-full text-center my-10 px-2;
+}
+
+/* Custom Menu */
+.custom_menu-btn {
+  @apply gap-4 w-full rounded-md p-4 text-base outline-none capitalize ;
+}
+
+/* .custom_menu-items {;
+} */
+
+.custom_menu-item {
+  @apply text-left w-full px-5 py-2 text-sm hover:bg-violet-500 self-start whitespace-nowrap capitalize;
+}

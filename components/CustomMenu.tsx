@@ -12,7 +12,7 @@ type Props = {
 };
 
 const CustomMenu = ({ title, state, filters, setState }: Props) => (
-  <div className="flexStart flex-col w-full gap-7 relative">
+  <div className="flexStart flex-col w-full gap-7 relative ">
     <label htmlFor={title} className="w-full text-gray-100">
       {title}
     </label>
@@ -32,7 +32,9 @@ const CustomMenu = ({ title, state, filters, setState }: Props) => (
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="flexStart custom_menu-items">
+        <Menu.Items
+          className="flexStart custom_menu-items border-nav-border flex-col absolute left-0 mt-2 xs:min-w-[300px] w-fit max-h-64 origin-top-right rounded-xl bg-white border shadow-menu overflow-y-auto"
+        >
           {filters.map((tag) => (
             <Menu.Item key={tag}>
               <button

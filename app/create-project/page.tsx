@@ -11,7 +11,7 @@ const CreateProject = async () => {
   return (
     <Model>
       <h3 className="model-head-text">Create Project</h3>
-      <ProjectForm />
+      <ProjectForm type="create" session={session} />{" "}
     </Model>
   );
 };
