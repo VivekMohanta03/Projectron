@@ -16,14 +16,20 @@ type Props = {
 const ProjectCard = ({ id, image, title, name, avatarUrl, userId }: Props) => {
   const [randomLikes, setRandomLikes] = useState(0);
   const [randomViews, setRandomViews] = useState("");
+  const [abortLike, setAbortLike]= useState(true);
+useEffect(() => {
+  setRandomLikes(Math.floor(Math.random() * 1000));
+  setRandomViews(
+   String((Math.floor(Math.random() * 1000) / 100).toFixed(1) + "k")
+  );
+},[])
+ 
 
-  useEffect(() => {
-    setRandomLikes(Math.floor(Math.random() * 1000));
-    setRandomViews(
-      String((Math.floor(Math.random() * 1000) / 100).toFixed(1) + "k")
-    );
-  }, []);
-
+const incLike = ()=>{
+  setAbortLike(!abortLike)
+  abortLike===true?setRandomLikes(randomLikes+1):setRandomLikes(randomLikes-1)
+  
+}
   return (
     <div className="flexCenter flex-col rounded-2xl drop-shadow-card">
       <Link
@@ -59,7 +65,8 @@ const ProjectCard = ({ id, image, title, name, avatarUrl, userId }: Props) => {
 
         <div className="flexCenter gap-3">
           <div className="flexCenter gap-2">
-            <Image src="/hearth.svg" width={13} height={12} alt="heart" />
+           <button>{abortLike? <Image src="/hearth.svg" width={13} height={12} alt="heart"  onClick={incLike}/>:
+                               <Image src="/hearth-purple.svg" width={13} height={12} alt="heart"  onClick={incLike}/>} </button>
             <p className="text-sm">{randomLikes}</p>
           </div>
           <div className="flexCenter gap-2">
