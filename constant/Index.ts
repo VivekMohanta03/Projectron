@@ -21,6 +21,24 @@ export const NavLinks = [
     "Chatbots",
   ];
   
+  export const categoryNavNormal = [
+    "Full-Stack",
+    "Mobile",
+    "DevOps",
+    "Machine Learning",
+    "Cybersecurity",
+    "Blockchain",
+  ]
+  export const categoryNavDrop = [
+    "Frontend",
+    "Backend",
+    "UI/UX",
+    "Game Dev",
+    "Data Science",
+    "E-commerce",
+    "Chatbots",
+  ]
+
   export const footerLinks = [
     {
       title: "For developers",
