@@ -108,7 +108,7 @@ const ProjectForm = ({ type, session, project }: Props) => {
       />
 
       <FormField
-        title="Description"
+        title="Abstract"
         state={form.description}
         placeholder="Showcase and discover remarkable developer projects."
         isTextArea
