@@ -20,7 +20,7 @@ const Formm = () => {
     <div>
       <section className="flex-auto  my-3 mr-auto bg-violet-100 border rounded-lg px-4 py-2 sm:px-60 sm:py-4 leading-relaxed">
         <h1 className="mb-4 text-2xl font-extrabold text-gray-900 dark:text-black md:text-2xl lg:text-2xl">
-          Comments
+          Reviews
         </h1>
 
         {comments.map((cmnt) => {
@@ -46,7 +46,7 @@ const Formm = () => {
           value={newCommnets}
           onChange={(event) => setNewComments(event.target.value)}
         />
-        <Button type="submit" title="Comment" />
+        <Button type="submit" title="Add a Review" />
       </form>
     </div>
   );
